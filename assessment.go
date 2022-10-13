@@ -13,9 +13,9 @@ type Interface interface {
 }
 
 func MapString(i Interface) {
-	fmt.Println(i.GetValueAsRuneSlice())
+	//fmt.Println(i.GetValueAsRuneSlice())
 	for pos := range i.GetValueAsRuneSlice() {
-		fmt.Println(pos)
+		//fmt.Println(pos)
 		i.TransformRune(pos)
 	}
 }
